@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hangman-svg {
+    width: 200px;
+    height: 250px;
+}
+
+.gallows {
+    stroke: #000;
+    stroke-width: 4;
+    stroke-opacity: 1; /* Ensure gallows are always visible */
+}
+
+.body-part {
+    stroke: #000;
+    stroke-width: 4;
+    fill: none;
+    stroke-opacity: 0;
+}
+
+.body-part.visible {
+    stroke-opacity: 1;
+}
+
+#word-container {
+    margin-top: 20px;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+#guesses-container {
+    margin-top: 20px;
+}
+
+#input-container {
+    margin-top: 20px;
+}
+
+#guess-input {
+    width: 50px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#guess-button {
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+#message-container {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#play-again-button {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
